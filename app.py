@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 import pickle
 import pandas as pd
+import os
 
 # Initialize Flask App
 app = Flask(__name__)
@@ -31,18 +32,12 @@ def predict():
         # Clamp prediction between 0 and 5
         prediction = max(0.0, min(prediction, 5.0))
 
-
         return render_template('index.html', prediction_text=f"⭐ Predicted Rating: {prediction} / 5.0")
 
     except Exception as e:
         return render_template('index.html', prediction_text=f"❌ Error: {e}")
 
-# Run the app
-if __name__ == '__main__':
-    app.run(debug=True)
-    import os
-
+# ✅ Run the app with Railway compatible port
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=True, host='0.0.0.0', port=port)
-
