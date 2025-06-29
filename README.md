@@ -6,11 +6,17 @@ A simple machine learning web app built with **Flask** that predicts restaurant 
 
 ---
 
+## 🌐 Live Demo
+
+👉 [Click here to try the Restaurant Rating Predictor](https://web-production-4a4ed.up.railway.app/)
+
+---
+
 ## 📦 Dataset Source
 
 This project uses the **Zomato Bangalore Restaurant Dataset**, which contains details like:
-- Restaurant name, location
-- Average cost, total votes
+- Restaurant name, location  
+- Average cost, total votes  
 - Rating and delivery info
 
 🗂️ We used only 3 columns for prediction:
