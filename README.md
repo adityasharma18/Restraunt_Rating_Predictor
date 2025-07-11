@@ -8,7 +8,7 @@ A simple machine learning web app built with **Flask** that predicts restaurant 
 
 ## 🌐 Live Demo
 
-👉 [Click here to try the Restaurant Rating Predictor](https://web-production-4a4ed.up.railway.app/)
+👉 [Click here to try the Restaurant Rating Predictor](https://restraunt-rating-predictor.onrender.com/)
 
 ---
 
